@@ -1,6 +1,6 @@
 {
     "name": "@ham2k/lib-maidenhead-grid",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
   "devDependencies": {
     "jest": "^29.5.0",
