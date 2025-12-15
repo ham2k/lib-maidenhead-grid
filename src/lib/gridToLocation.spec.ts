@@ -23,7 +23,7 @@ describe('gridToLocation', () => {
     expect(gridToLocation('FN43rq')).toEqual([43.6875, -70.54166666666666]) // Buxton (N1SH)
   })
 
-   it('should work for 8-element grids', () => {
+  it('should work for 8-element grids', () => {
     expect(gridToLocation('JN58td25')).toEqual([48.14791666666667, 11.604166666666668]) // Munich
     expect(gridToLocation('GF15vc41')).toEqual([-34.91041666666666, -56.2125]) // Montevideo
     expect(gridToLocation('FM18lw20')).toEqual([38.918749999999996, -77.0625]) // Washington, DC
@@ -35,3 +35,4 @@ describe('gridToLocation', () => {
   })
 
 })
+

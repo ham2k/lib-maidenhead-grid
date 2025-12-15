@@ -23,3 +23,4 @@ describe('cleanLocationParams', () => {
     expect(cleanLocationParams({lat: () => "10", lon: () => "20"})).toEqual([10, 20])
   })
 })
+

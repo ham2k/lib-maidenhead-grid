@@ -1,17 +1,30 @@
 {
-    "name": "@ham2k/lib-maidenhead-grid",
-  "version": "0.2.0",
+  "name": "@ham2k/lib-maidenhead-grid",
+  "version": "0.3.0",
   "type": "module",
-  "devDependencies": {
-    "jest": "^29.5.0",
-    "standard": "^17.0.0"
-  },
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    "build": "tsc",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --config jest.config.mjs",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.5.0",
+    "standard": "^17.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
   },
   "standard": {
     "env": [
@@ -19,4 +32,3 @@
     ]
   }
 }
-
